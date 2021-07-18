@@ -5,6 +5,7 @@ import media from 'utils/media-queries'
 import Header from 'components/header'
 
 const HeroSection = styled.section`
+  margin-top: -25vh;
   height: 50vh;
   max-height: 100vh;
   display: flex;
@@ -20,7 +21,8 @@ const HeroSection = styled.section`
 
 const Hero = () => {
   return (
-    <><Header />
+    <>
+    <Header />
     <HeroSection>
       <head>
       <style>

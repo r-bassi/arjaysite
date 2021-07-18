@@ -69,7 +69,16 @@ const Role = styled.div`
   color: ${color.grey700};
   text-align: left;
   line-height: 1.4;
+  margin-bottom: 0.5cm;
   font-size: ${fontSize.f4};
+  ${media.sm`
+    text-align: center;
+    font-size: ${fontSize.f6};
+  `};
+`
+
+const Space = styled.div`
+  margin-top: 7cm;
   ${media.sm`
     text-align: center;
     font-size: ${fontSize.f6};
@@ -172,8 +181,26 @@ const Header = (props) => {
             <NameArticle article={props.article}>Arjay Rafuse</NameArticle>
           </NameLink>
         )}
+        
+        <NameLink href="/">
         {!props.article && <Name article={props.article}>Arjay Rafuse</Name>}
-        {!props.article && <Role>bottom text</Role>}
+        </NameLink>
+        <Space />
+        <NameLink href="/about">
+        {!props.article && <Role>About Me</Role>}
+        </NameLink>
+        <NameLink href="/work">
+        {!props.article && <Role>Work Experience</Role>}
+        </NameLink>
+        <NameLink href="/course">
+        {!props.article && <Role>Course Experience</Role>}
+        </NameLink>
+        <NameLink href="/keyboard">
+        {!props.article && <Role>Keyboard Content</Role>}
+        </NameLink>
+        <NameLink href="/contact">
+        {!props.article && <Role>Contact Me</Role>}
+        </NameLink>
       </LogoWrapper>
       <div>
         <SocialLinks article={props.article}>

@@ -33,7 +33,7 @@ const GlobalWrapper = (props) => {
         />
         <meta property="og:description" content="Arjay Rafuse's projects" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://abbykeys.ca" />
+        <meta property="og:url" content="arjaydeocampo.github.io" />
         <meta property="og:title" content="Arjay Rafuse" />
 
         <link rel="manifest" href="/manifest.json" />
