@@ -17,6 +17,10 @@ const HeroSection = styled.section`
   ${media.sm`
     height: calc(100vh - 76px);
   `}
+  @media (max-width: 900px) {
+    margin-top: 100px;
+    margin-bottom: -200px;
+  }
 `
 
 const Hero = () => {

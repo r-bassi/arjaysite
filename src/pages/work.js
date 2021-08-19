@@ -28,6 +28,9 @@ const Big = styled.span`
 
 const Placement = styled.div`
   margin-top: -500px;
+  @media (max-width: 900px) {
+    margin-top: 100px;
+  }
 `
 
 const Work = () => {
