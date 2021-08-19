@@ -2,11 +2,11 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { Container, Content, SideNavigation } from "side-navigation-react";
 import { navItems, theme } from "./constants";
-import { Work } from "./work";
-import { About } from "./about";
-import { Course } from "./course";
-import { Keyboard } from "./keyboard";
-import { Contact } from "./contact";
+import { Work } from "../../pages/work";
+import { About } from "../../pages/about";
+import { Course } from "../../pages/course";
+import { Keyboard } from "../../pages/keyboard";
+import { Contact } from "../../pages/contact";
 
 const App = () => (
   <Container>
